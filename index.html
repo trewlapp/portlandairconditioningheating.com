@@ -36,7 +36,7 @@
         "alternateName": "Portland HVAC",
         "url": "https://portlandairconditioningheating.com/",
         "logo": "https://portlandairconditioningheating.com/logo.png",
-        "image": "https://portlandairconditioningheating.com/og-image.jpg",
+        "image": "https://portlandairconditioningheating.com/logo.png",
         "telephone": "+19714844490",
         "email": "info@portlandairconditioningheating.com",
         "description": "Portland Air Conditioning & Heating is a trusted HVAC contractor serving Portland, OR. We provide professional air conditioning and heating services throughout the Portland metropolitan area.",
@@ -200,16 +200,19 @@
             gap: 10px;
         }
         .logo-icon {
-            width: 48px;
-            height: 48px;
-            background: #e63946;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 1.5rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
             flex-shrink: 0;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
         }
         .logo-text h1 {
             font-size: 1.15rem;
@@ -1012,7 +1015,7 @@
     <div class="container header-inner">
         <a href="#" class="logo">
             <div class="logo-icon">
-                <i class="fas fa-snowflake"></i>
+                <img src="logo.png" alt="Portland Air Conditioning & Heating logo" width="60" height="60">
             </div>
             <div class="logo-text">
                 <h1>Portland Air Conditioning<br>& Heating</h1>
